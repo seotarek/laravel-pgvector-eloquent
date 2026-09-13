@@ -1,0 +1,30 @@
+{
+  "name": "seotarek/laravel-pgvector-eloquent",
+  "description": "Seamless PostgreSQL pgvector integration for Laravel Eloquent models.",
+  "keywords": ["laravel", "pgvector", "postgresql", "ai", "embeddings", "vector-search", "eloquent"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Tarek Mohamed",
+      "email": "seotarek@gmail.com",
+      "homepage": "https://tarek-mohamed.me.eg"
+    }
+  ],
+  "require": {
+    "php": "^8.2",
+    "illuminate/database": "^10.0|^11.0",
+    "illuminate/support": "^10.0|^11.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Seotarek\\Pgvector\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Seotarek\\Pgvector\\PgvectorServiceProvider"
+      ]
+    }
+  }
+}
